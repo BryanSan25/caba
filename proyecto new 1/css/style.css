@@ -493,6 +493,12 @@ section {
         padding-top: 10px;
         text-align: center;
     }
+    .p-final-carrusel-index-area {
+        padding: 5px 0;
+    }
+    .flex-carrusel-carreras-index {
+        padding: 5px 0
+    }
     /* section 4 */
     .section-4 {
         margin-top: 40px;
