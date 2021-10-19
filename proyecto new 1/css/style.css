@@ -370,9 +370,93 @@ section {
     margin: 0 auto;
 }
 
+/* JS */
+
+/* Pop Up Iniciar Sesion */
+
+#containerPopUp{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000080;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
 
 
-
+#popUp{
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    height: 60vh;
+    background: url("../imgs/fondo login index.svg"), rgb(29, 29, 29);
+    background-position: -185%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 130%;
+    -moz-background-size: 130%;
+    background-size: 125%;
+    padding: 1rem 0 2rem;
+    top: 18%;
+    left: 25%;
+    border-radius: 15px;
+}
+.popUpWidth {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.popUpf-direction {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+}
+#popUp h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 28px;
+    border-bottom: 2px solid rgb(255, 140, 0);
+}
+#containerPopUp img {
+    width: 280px;
+}
+#emailPopUp, #passwordPopUp {
+    width: 300px;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: none;
+    margin: 10px auto;
+}
+#emailPopUp:focus, #passwordPopUp:focus {
+    outline: none;
+}
+#containerPopUp .img-login-2 {
+    display: none;
+}
+.fa-times {
+    font-size: 30px;
+    position: absolute;
+    right: 4%;
+}
+.fa-times:active {
+    transform: scale(.9, .9);
+    transition: .1s;
+}
+.button-is-index-2 {
+    background-color: rgb(255, 140, 0);
+    width: 310px;
+    height: 37px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 13px auto;
+    cursor: pointer;
+}
 
 
 
@@ -493,12 +577,7 @@ section {
         padding-top: 10px;
         text-align: center;
     }
-    .p-final-carrusel-index-area {
-        padding: 5px 0;
-    }
-    .flex-carrusel-carreras-index {
-        padding: 5px 0
-    }
+
     /* section 4 */
     .section-4 {
         margin-top: 40px;

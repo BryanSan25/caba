@@ -9,6 +9,37 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Js -->
+    <div ondblclick="closePopUp()" id="containerPopUp">
+        <div id="popUp" class="app">
+            <i ondblclick="closePopUp()" class="fas fa-times"></i>
+            <div class="popUpWidth">
+                <div class="popUpf-direction">
+                    <div>
+                        <h2>Iniciar Sesion</h2>
+                    </div>
+                    <div>
+                        <img class="img-login-2" src="./imgs/Login-amico.svg" alt="login svg">
+                    </div>
+                    <div>
+                        <div>
+                            <input type="email" name="emailPopUp" id="emailPopUp" placeholder="Correo Electronico">
+                        </div>
+                        <div>
+                            <input type="password" name="passwordPopUp" id="passwordPopUp" placeholder="Contraseña">
+                        </div>
+                        <div class="button-is-index-2">Iniciar Sesión</div>
+                    </div>
+                </div>
+                <div class="popUpf-direction">
+                    <div>
+                        <img class="img-login-pc" src="./imgs/Login-amico.svg" alt="login svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="contenedor-header-principal">
             <div class="logo-header-index">
@@ -58,7 +89,7 @@
                     </div>
                     <div class="main-index-section-1-input">
                         <input type="email" name="" id="" placeholder="Escribe tu correo electronico">
-                        <div class="button-is-index">Iniciar Sesion</div>
+                        <div ondblclick="displayIS()" class="button-is-index">Iniciar Sesion</div>
                     </div>
                 </div>
             </div>
@@ -261,6 +292,7 @@
             </div>
         </section>
     </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>
 
